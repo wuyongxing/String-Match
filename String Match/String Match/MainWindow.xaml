@@ -1,0 +1,10 @@
+﻿<Window x:Name="MainWindow1" x:Class="String_Match.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="491.045" Width="713.059" Title="选择导入文本方式">
+    <Grid>
+        <Button Content="从文件中导入" HorizontalAlignment="Left" Margin="138,109,0,0" VerticalAlignment="Top" Width="412" Height="88" FontSize="25" Click="Button_Click"/>
+        <Button Content="手动输入" HorizontalAlignment="Left" Margin="138,278,0,0" VerticalAlignment="Top" Width="412" Height="88" FontSize="25" Click="Button_Click_1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="28,33,0,0" TextWrapping="Wrap" Text="选择文本导入方式" VerticalAlignment="Top" Height="52" Width="231" FontSize="25"/>
+
+    </Grid>
+</Window>

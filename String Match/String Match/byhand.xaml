@@ -1,0 +1,20 @@
+﻿<Window x:Name="Matring1" x:Class="String_Match.byhand"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="选择匹配模式" Height="491.045" Width="713.059" Closed="Window_Closed">
+    <Grid>
+        <TextBox HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" x:Name="hand1" HorizontalAlignment="Left" Height="41" Margin="250,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" FontSize="14"/>
+        <TextBox HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" x:Name="hand2" HorizontalAlignment="Left" Height="41" Margin="250,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" FontSize="14"/>
+        <ComboBox x:Name="choose1" HorizontalAlignment="Left" Margin="250,270,0,0" VerticalAlignment="Top" Width="208" Height="36" FontSize="20">
+            <ComboBoxItem x:Name="BF1" Content="朴素算法" HorizontalAlignment="Left" Width="208" Height="32" FontSize="20" Margin="0,0,-2,0"/>
+            <ComboBoxItem x:Name="RK1" Content="Rabin-Karp算法" HorizontalAlignment="Left" Width="208" Height="30" FontSize="20" Margin="0,0,-2,0"/>
+            <ComboBoxItem x:Name="KMP1" Content="KMP算法" HorizontalAlignment="Left" Width="206" Height="30" FontSize="20"/>
+            <ComboBoxItem x:Name="Three1" Content="选择三种算法进行比较" HorizontalAlignment="Left" Width="206" FontSize="20"/>
+        </ComboBox>
+        <Button HorizontalAlignment="Left" Margin="297,397,0,0" VerticalAlignment="Top" Width="114" Height="41" IsDefault="True" Content="开始匹配" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="41" Margin="92,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" FontSize="24"><Run Language="zh-cn" Text="  输入文本"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="62" Margin="106,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" FontSize="24"><Run Language="zh-cn" Text="输入匹配字符串"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="106,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" FontSize="24"><Run Language="zh-cn" Text="算法选择"/></TextBlock>
+
+    </Grid>
+</Window>
